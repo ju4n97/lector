@@ -1,8 +1,8 @@
 import { type Reader, createReader } from '@lectorjs/primitives';
-import { createMockParser } from '@lectorjs/primitives/testing';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { context } from '../../src/context.ts';
 import { RsvpMode } from '../../src/mode.ts';
+import { createMockParser } from '../__mocks__/parser.mock.ts';
 
 describe('pause', () => {
     let reader: Reader<RsvpMode>;

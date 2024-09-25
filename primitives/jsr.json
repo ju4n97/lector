@@ -3,7 +3,6 @@
   "version": "0.0.5",
   "description": "Primitives for building and extending readers.",
   "exports": {
-    ".": "./src/mod.ts",
-    "./testing": "./test/mod.ts"
+    ".": "./src/mod.ts"
   }
 }
