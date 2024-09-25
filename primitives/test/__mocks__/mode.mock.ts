@@ -1,4 +1,4 @@
-import { type Mocked, vi } from 'vitest';
+import { type Mock, type Mocked, vi } from 'vitest';
 import type { Command } from '../../src/command.ts';
 import type { Mode } from '../../src/mode.ts';
 
@@ -15,9 +15,9 @@ export class MockMode implements Mocked<Mode<MockModeCommands>> {
         baz: vi.fn(),
     };
 
-    render = vi.fn().mockReturnValue('<span>foo</span>');
+    render: Mock = vi.fn().mockReturnValue('<span>foo</span>');
 
-    onWordParsed = vi.fn();
+    onWordParsed: Mock = vi.fn();
 
-    onParsedFinish = vi.fn();
+    onParsedFinish: Mock = vi.fn();
 }
